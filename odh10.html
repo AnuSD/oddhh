@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+.errmsg{
+  color: red;
+  margin-left: 100px;
+}
+.msg{
+  color: red;
+  margin-left: 100px;
+}
+.rmsg{
+  color: red;
+  margin-left: 100px;
+}
+.container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: aliceblue;
+    padding-bottom: 400px;
+}
+label{
+    margin-left: 60px;
+}
+button{
+    margin-left: 60px;
+}
+
+    
+</style>
+<body>
+    <div class="container"><br>
+
+ 
+  <label >First name:</label>           
+  <input id="fname"><br>
+  <label class="msg" id="fname_error"></label>
+  <br>
+  
+  <label >Last name :</label>
+  <input id="lname"><br>
+  <label class="rmsg" id="lname_error"></label>
+  <br>
+  
+   <label >Email ID :</label>
+  <input id="email"><br>
+  <label class="errmsg" id="email_error"></label>
+  <br>
+
+  <label >Birth-Date  :</label>
+  <input id="b-date"><br>
+  <label class="errmsg" id="bdate_error"></label>
+  <br>
+
+  <label >Password :</label>
+  <input id="pass" ><br>
+  <label class="errmsg" id="pass-error"></label>
+  <br>
+
+  <label >Confirm Password :</label>
+  <input id="cpass" ><br>
+  <label class="errmsg" id="cpass-error"></label>
+  <br>
+  
+  <button type="submit"  onclick="validateForm()">submit</button>
+
+</div>
+<script> 
+
+function validateForm()
+{
+	let inputValue=document.getElementById("fname").value;
+	if(inputValue=='')
+    {
+    	console.log("value is empty");
+        
+        document.getElementById("fname_error").textContent="Please fill the first name"; }
+
+
+    let lnamevalue=document.getElementById("lname").value;
+    if(lnamevalue=='')
+    {
+    	console.log("value is empty");
+        
+        document.getElementById("lname_error").textContent="Please fill the last name";}
+
+
+    let emailvalue=document.getElementById("email").value;
+    if(emailvalue=='')
+    {
+    	console.log("value is empty");
+        
+        document.getElementById("email_error").textContent="Please fill the Email ID";}
+
+
+    let bdatevalue=document.getElementById("b-date").value;
+    if(bdatevalue=='')
+    {
+    	console.log("value is empty");
+        
+        document.getElementById("bdate_error").textContent="Please fill the B-date";}
+
+
+    let passvalue=document.getElementById("pass").value;
+    if( passvalue=='')
+    {
+    	console.log("value is empty");
+        document.getElementById("pass-error").textContent="Please fill the password";}
+
+
+    
+    let cpassvalue=document.getElementById("cpass").value;
+    if( cpassvalue=='')
+    {
+    	console.log("value is empty");
+        
+        document.getElementById("cpass-error").textContent="Please confirm password";}
+}
+
+</script>
+
+</body>
+</html>

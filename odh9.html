@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>index</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+  .imago:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
+<body>
+  <div class="container">
+    <nav class="navbar" width="-300px">
+      <img src="output-onlinepngtools.png" alt="" srcset="" width="300px" class="imago">
+    <div class="topnav">
+      <a class="active" href="odh1.html">MARATHI POEMS</a>
+      <a class="active" href="odh6.html">HINDI POEMS</a>
+      <a class="active" href="#">ENGLISH POEMS</a>
+      <a class="active" href="#">LEKH</a>
+    </div>
+   
+  </nav>
+  <section class="carousel" aria-label="Gallery">
+    <ol class="carousel__viewport">
+      <li id="carousel__slide1"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <a href="#carousel__slide4"
+             class="carousel__prev">Go to last slide</a>
+             <img class ="anu" src="https://www.wallpaperflare.com/static/741/918/384/coffee-pen-notebook-work-wallpaper-thumb.jpg" alt=""  width="1120px" height="800px">
+             <div class="carousel-caption d-none d-md-block">
+              <!-- <p class="para">कॉफी आणि बरंच काही….</p>
+              <a href="odh1.html" class="btn btn-primary ">Read</a> -->
+              <p id="demo" style="display:none">कॉफी आणि बरंच काही….!</p>
+
+              <button type="button" class="btn btn-primary " onmouseover="document.getElementById('demo').style.display='block'">Read</button>
+             </div>
+          <a href="#carousel__slide2"
+             class="carousel__next">Go to next slide</a>
+        </div>
+      </li>
+      <li id="carousel__slide2"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper"></div>
+        <a href="#carousel__slide1"
+           class="carousel__prev">Go to previous slide</a>
+           <img class ="anu"src="https://picstatio.com/large/pnis6w/pen-and-paper-wallpaper.jpg" alt="" width="1120px" height="800px">
+           <div class="carousel-caption d-none d-md-block">
+            <!-- <p class="para" style="color: ;BLACK">The pen is the tongue of the mind.</p>
+            <a href="odh.html" class="btn btn-primary ">Read</a> -->
+            <p id="demoS" style="display:none">The pen is the tongue of the mind.</p>
+
+            <button type="button" class="btn btn-primary " onmouseover="document.getElementById('demoS').style.display='block'">Read</button>
+         </div>
+        <a href="#carousel__slide3"
+           class="carousel__next">Go to next slide</a>
+      </li>
+      <li id="carousel__slide3"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper"></div>
+        <a href="#carousel__slide2"
+           class="carousel__prev">Go to previous slide</a>
+           <img class ="anu" src="kellyrose.jpg" alt=""  width="1120px" height="800px">
+           <div class="carousel-caption d-none d-md-block">
+            <!-- <p class="para">"लिख तु✍️ ,अपने वो 🥰 लम्हे ,जो इस गुलाब 🌹जैसे खूबसूरत है”.</p>
+            <a href="odh6.html" class="btn btn-primary ">Read</a> -->
+            <p id="demoSA" style="display:none">"लिख तु✍️ ,अपने वो 🥰 लम्हे ,जो इस गुलाब 🌹जैसे खूबसूरत है”.</p>
+
+            <button type="button" class="btn btn-primary " onmouseover="document.getElementById('demoSA').style.display='block'">Read</button>
+          </div>
+        <a href="#carousel__slide4"
+           class="carousel__next">Go to next slide</a>
+      </li>
+      <li id="carousel__slide4"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper"></div>
+        <a href="#carousel__slide3"
+           class="carousel__prev">Go to previous slide</a>
+           <img class ="anu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSvPm1oHHTWd-he55AIE8malUUYa8kg1lUOw&usqp=CAU" alt=""  width="1120px" height="800px">
+           <div class="carousel-caption d-none d-md-block">
+            <!-- <p class="para" style="color: BLACK;">"Gratitude is a first step of success”.</p>
+            <a href=" " class="btn btn-primary ">Read</a> -->
+            <p id="demoSAN" style="display:none">"Gratitude is a first step of success”.</p>
+
+            <button type="button" class="btn btn-primary " onmouseover="document.getElementById('demoSAN').style.display='block'">Read</button>
+          </div>
+        <a href="#carousel__slide1"
+           class="carousel__next">Go to first slide</a>
+      </li>
+    </ol>
+    <aside class="carousel__navigation">
+      <ol class="carousel__navigation-list">
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide1"
+             class="carousel__navigation-button"></a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide2"
+             class="carousel__navigation-button"></a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide3"
+             class="carousel__navigation-button"></a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide4"
+             class="carousel__navigation-button"></a>
+        </li>
+      </ol>
+    </aside>
+  </section>
+  <div class="para">
+    <b style="font-size: 22px; ">About us :</b>
+  <p>Odh is a one type of blog  where you can write or read poems
+  and also lekh along with creative idea.
+ This blog is provide information about how to write a poem first of all Decide what you want to write about. Unless you've been assigned to write a poem about a specific topic, the first step in writing a poem is determining a topic to write about. ... </p>
+
+<p> Explore words, rhymes, and rhythm....</p></div>
+ <!-- <footer>
+   <div class="content">
+     <div class="left box">
+       <div class="upper">
+        
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="#"><i class="fas fa-phone-volume"></i>8806102924</a>
+         </div>
+         <div class="email">
+           <a href="#"><i class="fas fa-envelope"></i>ab@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <!-- <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="#"></a></div>
+     <!-- </div> -->
+     <!-- <div class="right box">
+       <div class="topic">Subscribe us</div>
+       <form action="#">
+         <input type="text" placeholder="Enter email address">
+         <input type="submit" name="" value="Send">
+         <div class="media-icons">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-youtube"></i></a>
+           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2022 <a href="#">CodingLab</a> All rights reserved</p>
+   </div>
+  </footer> -->
+  <footer class="footer">
+    Please share your feedback or Contact Us: &nbsp;<span style="text-decoration:underline;"><a href="mailto:abpoems@gmail.com?subject=Hello ab Poems" target="_self">abpoems@gmail.com</a></span></span>
+</footer> 
+
+  
+</div>
+
+</body>
+</html>
